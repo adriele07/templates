@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Relatório de Manutenção</title>
+  </head>
+  <body>
+    <h1>Relatório de Manutenção</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Marca</th>
+          <th>Modelo</th>
+          <th>Ano</th>
+          <th>Preço</th>
+          <th>Taxa de imposto</th>
+          <th>Pagamento inicial</th>
+          <th>Valor total</th>
+          <th>Data do orçamento</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for orcamento in orcamentos %}
+          <tr>
+            <td>{{ orcamento[0] }}</td>
+            <td>{{ orcamento[1] }}</td>
+            <td>{{ orcamento[2] }}</td>
+            <td>{{ orcamento[3] }}</td>
+            <td>R$ {{ orcamento[4] }}</td>
+            <td>{{ orcamento[5] }}%</td>
+            <td>R$ {{ orcamento[6] }}</td>
+            <td>R$ {{ orcamento[7] }}</td>
+            <td>{{ orcamento[8] }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
