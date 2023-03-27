@@ -20,16 +20,16 @@
             <div id="navcol-1" class="collapse navbar-collapse">
                <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
-                     <a class="nav-link active" href="/orcamento">Dicas de Orçamento</a>
+                     <a class="nav-link active" href="orcamento.html">Dicas de Orçamento</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="/send_email">Orçamento detalhado</a>
+                     <a class="nav-link" href="orcamentodetalhado.html">Orçamento detalhado</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="/maintenance_history">Histórico de manutenções</a>
+                     <a class="nav-link" href="maintenance_history.html">Histórico de manutenções</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="/relatorio">relatorio</a>
+                     <a class="nav-link" href="relatorio.html">relatorio</a>
                   </li>
                </ul>
             </div>
@@ -43,8 +43,8 @@
                      <div class="mb-3"></div>
                      <center>
                         <div class="btn-group" role="group">
-                           <a href="{{ url_for('manutencoes.manutencoes') }}" class="btn btn-primary" role="button">Adicionar Manutenção</a>
-                           <a href="{{ url_for('resumo.resumo') }}"class="btn btn-primary" role="button">Ver resumo da manutenção</a>
+                           <a href="{{ url_for('manutencoes.html') }}" class="btn btn-primary" role="button">Adicionar Manutenção</a>
+                           <a href="{{ url_for('resulmo.html') }}"class="btn btn-primary" role="button">Ver resumo da manutenção</a>
                            <a href="{{ url_for('dica.dicas') }}"class="btn btn-primary" role="button">dica</a>
                         </div>
                      </center>
